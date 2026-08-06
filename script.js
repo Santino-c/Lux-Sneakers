@@ -31,7 +31,7 @@ const lightboxClose = document.getElementById("lightboxClose");
 const lightboxPrev = document.getElementById("lightboxPrev");
 const lightboxNext = document.getElementById("lightboxNext");
 
-const whatsappNumber = "5491127109400";
+const whatsappNumber = "5492983660459";
 
 const models = {
   "louis-vuitton": {
