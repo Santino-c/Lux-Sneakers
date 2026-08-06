@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo premium de zapatillas. Elegí tu modelo, mirá todas las fotos y consultá disponibilidad.">
+  <title>Luxe Sneakers | Catálogo premium</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header" id="header">
+    <a href="#inicio" class="brand" aria-label="Ir al inicio">
+      <span class="brand-mark">LS</span>
+      <span>
+        <strong>LUXE</strong>
+        <small>SNEAKERS</small>
+      </span>
+    </a>
+
+    <button class="menu-button" id="menuButton" aria-label="Abrir menú" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#catalogo">Modelos</a>
+      <a href="#producto">Producto</a>
+      <a href="#galeria">Galería</a>
+      <a href="#talles">Talles</a>
+      <a href="#comprar" class="nav-cta">Consultar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-background">
+        <img id="heroImage" src="img/Louis Vuitton/Modelo-1.jpg" alt="Louis Vuitton Trainer">
+      </div>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content reveal">
+        <p class="eyebrow" id="heroEyebrow">COLECCIÓN EXCLUSIVA</p>
+        <h1 id="heroTitle">Louis Vuitton<br><span>Trainer</span></h1>
+        <p class="hero-description" id="heroDescription">
+          Diseño premium, presencia única y detalles que convierten cada paso en una declaración de estilo.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#galeria" class="button button-primary">Ver galería</a>
+          <a href="#comprar" class="button button-outline">Consultar disponibilidad</a>
+        </div>
+      </div>
+
+      <div class="hero-counter">
+        <span id="heroCurrent">01</span>
+        <div class="counter-line"></div>
+        <span>04</span>
+      </div>
+
+      <a href="#producto" class="scroll-indicator" aria-label="Bajar a la siguiente sección">
+        <span>Descubrir</span>
+        <i></i>
+      </a>
+    </section>
+
+
+    <section class="section model-catalog-section" id="catalogo">
+      <div class="section-heading catalog-heading reveal">
+        <div>
+          <p class="eyebrow">ELEGÍ TU ESTILO</p>
+          <h2>Nuestros<br>modelos</h2>
+        </div>
+
+        <p>
+          Seleccioná una colección para cambiar automáticamente el producto,
+          la galería, las imágenes y el mensaje de WhatsApp.
+        </p>
+      </div>
+
+      <div class="model-catalog">
+        <button class="model-card active reveal" type="button" data-model="louis-vuitton">
+          <img src="img/Louis Vuitton/Modelo-1.jpg" alt="Louis Vuitton Trainer">
+          <span class="model-card-overlay"></span>
+          <span class="model-card-content">
+            <small>Colección premium</small>
+            <strong>Louis Vuitton</strong>
+            <em>Ver colección →</em>
+          </span>
+        </button>
+
+        <button class="model-card reveal" type="button" data-model="air-max-95">
+          <img src="img/Air Max 95/Modelo-1.jpg" alt="Nike Air Max 95">
+          <span class="model-card-overlay"></span>
+          <span class="model-card-content">
+            <small>Ícono urbano</small>
+            <strong>Nike Air Max 95</strong>
+            <em>Ver colección →</em>
+          </span>
+        </button>
+
+        <button class="model-card reveal" type="button" data-model="air-max-tl-2-5">
+          <img src="img/Air Max TL 2.5/Modelo-1.jpg" alt="Nike Air Max TL 2.5">
+          <span class="model-card-overlay"></span>
+          <span class="model-card-content">
+            <small>Nike</small>
+            <strong>Air Max TL 2.5</strong>
+          </span>
+        </button>
+
+        <button class="model-card reveal" type="button" data-model="jordan-1-low">
+          <img src="img/Jordan 1 Low/Modelo-1.jpg" alt="Air Jordan 1 Low">
+          <span class="model-card-overlay"></span>
+          <span class="model-card-content">
+            <small>Jordan</small>
+            <strong>Jordan 1 Low</strong>
+          </span>
+        </button>
+
+        <button class="model-card reveal" type="button" data-model="air-force">
+          <img src="img/Air Force/Modelo-1.jpg" alt="Nike Air Force">
+          <span class="model-card-overlay"></span>
+          <span class="model-card-content">
+            <small>Nike</small>
+            <strong>Air Force</strong>
+          </span>
+        </button>
+
+        <button class="model-card reveal" type="button" data-model="air-jordan-mid">
+          <img src="img/Air Jordan Mid/Modelo-1.jpg" alt="Air Jordan Mid">
+          <span class="model-card-overlay"></span>
+          <span class="model-card-content">
+            <small>Jordan</small>
+            <strong>Air Jordan Mid</strong>
+          </span>
+        </button>
+
+        <button class="model-card reveal" type="button" data-model="air-jordan-3">
+          <img src="img/Air Jordan 3/Modelo-1.jpg" alt="Air Jordan 3">
+          <span class="model-card-overlay"></span>
+          <span class="model-card-content">
+            <small>Jordan</small>
+            <strong>Air Jordan 3</strong>
+          </span>
+        </button>
+
+        <button class="model-card reveal" type="button" data-model="off-white">
+          <img src="img/Off-White/Modelo-1.jpg" alt="Off-White">
+          <span class="model-card-overlay"></span>
+          <span class="model-card-content">
+            <small>Luxury</small>
+            <strong>Off-White</strong>
+          </span>
+        </button>
+
+        <button class="model-card reveal" type="button" data-model="air-max-dn">
+          <img src="img/Air Max Dn/Modelo-1.jpg" alt="Nike Air Max DN">
+          <span class="model-card-overlay"></span>
+          <span class="model-card-content">
+            <small>Nike</small>
+            <strong>Air Max DN</strong>
+          </span>
+        </button>
+
+        <button class="model-card reveal" type="button" data-model="amiri">
+          <img src="img/Amiri/Modelo-1.jpg" alt="Amiri">
+          <span class="model-card-overlay"></span>
+          <span class="model-card-content">
+            <small>Luxury</small>
+            <strong>Amiri</strong>
+          </span>
+        </button>
+
+        <button class="model-card reveal" type="button" data-model="air-jordan-11">
+          <img src="img/Air Jordan 11/Modelo-1.jpg" alt="Air Jordan 11">
+          <span class="model-card-overlay"></span>
+          <span class="model-card-content">
+            <small>Jordan</small>
+            <strong>Air Jordan 11</strong>
+          </span>
+        </button>
+
+        <button class="model-card reveal" type="button" data-model="zoom-vomero-5">
+          <img src="img/Zoom Vomero 5/Modelo-1.jpg" alt="Nike Zoom Vomero 5">
+          <span class="model-card-overlay"></span>
+          <span class="model-card-content">
+            <small>Nike</small>
+            <strong>Zoom Vomero 5</strong>
+          </span>
+        </button>
+
+        <button class="model-card reveal" type="button" data-model="calvin-klein">
+          <img src="img/Calvin Klein/Modelo-1.jpg" alt="Calvin Klein">
+          <span class="model-card-overlay"></span>
+          <span class="model-card-content">
+            <small>Fashion</small>
+            <strong>Calvin Klein</strong>
+          </span>
+        </button>
+
+        <button class="model-card reveal" type="button" data-model="dior">
+          <img src="img/Dior/Modelo-1.jpg" alt="Dior">
+          <span class="model-card-overlay"></span>
+          <span class="model-card-content">
+            <small>Luxury</small>
+            <strong>Dior</strong>
+          </span>
+        </button>
+
+        <button class="model-card reveal" type="button" data-model="jordan-13">
+          <img src="img/Jordan 13/Modelo-1.jpg" alt="Air Jordan 13">
+          <span class="model-card-overlay"></span>
+          <span class="model-card-content">
+            <small>Jordan</small>
+            <strong>Jordan 13</strong>
+          </span>
+        </button>
+
+        <button class="model-card reveal" type="button" data-model="jordan-4">
+          <img src="img/Jordan 4/Modelo-1.jpg" alt="Air Jordan 4">
+          <span class="model-card-overlay"></span>
+          <span class="model-card-content">
+            <small>Jordan</small>
+            <strong>Jordan 4</strong>
+          </span>
+        </button>
+
+        <button class="model-card reveal" type="button" data-model="nike-air-vapormax">
+          <img src="img/Nike Air VaporMax/Modelo-1.jpg" alt="Nike Air VaporMax">
+          <span class="model-card-overlay"></span>
+          <span class="model-card-content">
+            <small>Nike</small>
+            <strong>Air VaporMax</strong>
+          </span>
+        </button>
+
+        <button class="model-card reveal" type="button" data-model="jordan-11-low">
+          <img src="img/Jordan 11/Modelo-1.jpg" alt="Air Jordan 11 Low">
+          <span class="model-card-overlay"></span>
+          <span class="model-card-content">
+            <small>Jordan</small>
+            <strong>Jordan 11 Low</strong>
+          </span>
+        </button>
+      </div>
+    </section>
+
+      <button class="model-card reveal" type="button" data-model="air-max-tl-2-5">
+          <img src="img/Air Max TL 2.5/Modelo-1.jpg" alt="Nike Air Max TL 2.5">
+          <span class="model-card-overlay"></span>
+          <span class="model-card-content">
+            <small>Nike</small>
+            <strong>Air Max TL 2.5</strong>
+          </span>
+        </button>
+
+    <section class="section product-section" id="producto">
+      <div class="section-heading reveal">
+        <p class="eyebrow">EL MODELO</p>
+        <h2 id="productTitle">Lujo urbano<br>sin límites</h2>
+      </div>
+
+      <div class="product-layout">
+        <div class="product-image reveal">
+          <img id="productImage" src="img/Louis Vuitton/Modelo-6.jpg" alt="Detalle del modelo seleccionado" loading="lazy">
+          <span class="image-number">01</span>
+        </div>
+
+        <div class="product-copy reveal">
+          <p id="productDescription">
+            Una silueta inspirada en el básquet de los años noventa, reinterpretada con una estética contemporánea y materiales de primera calidad.
+          </p>
+
+          <div class="features">
+            <article>
+              <span>01</span>
+              <div>
+                <h3>Diseño premium</h3>
+                <p>Terminaciones cuidadas y una combinación de materiales que destaca a simple vista.</p>
+              </div>
+            </article>
+
+            <article>
+              <span>02</span>
+              <div>
+                <h3>Comodidad diaria</h3>
+                <p>Interior acolchado y suela robusta para acompañarte durante todo el día.</p>
+              </div>
+            </article>
+
+            <article>
+              <span>03</span>
+              <div>
+                <h3>Estilo exclusivo</h3>
+                <p>Una zapatilla pensada para quienes buscan diferenciarse y elevar cualquier outfit.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stats-section">
+      <div class="stat reveal">
+        <strong class="counter" id="photoCounter" data-target="24">0</strong>
+        <span>Fotos del modelo</span>
+      </div>
+
+      <div class="stat reveal">
+        <strong class="counter" data-target="6">0</strong>
+        <span>Talles disponibles</span>
+      </div>
+
+      <div class="stat reveal">
+        <strong class="counter" data-target="100">0</strong>
+        <span>% estilo premium</span>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="galeria">
+      <div class="section-heading gallery-heading reveal">
+        <div>
+          <p class="eyebrow" id="galleryEyebrow">GALERÍA COMPLETA</p>
+          <h2 id="galleryTitle">Todos los<br>detalles</h2>
+        </div>
+
+        <p>
+          Tocá cualquier imagen para verla en pantalla completa y recorré cada ángulo del modelo.
+        </p>
+      </div>
+
+      <div class="gallery" id="gallery">
+        <button class="gallery-item gallery-item-large reveal" data-index="0">
+          <img src="img/Louis Vuitton/Modelo-1.jpg" alt="Louis Vuitton Trainer vista 1" loading="lazy">
+          <span>Vista 01</span>
+        </button>
+
+        <button class="gallery-item reveal" data-index="1">
+          <img src="img/Louis Vuitton/Modelo-2.jpg" alt="Louis Vuitton Trainer vista 2" loading="lazy">
+          <span>Vista 02</span>
+        </button>
+
+        <button class="gallery-item reveal" data-index="2">
+          <img src="img/Louis Vuitton/Modelo-3.jpg" alt="Louis Vuitton Trainer vista 3" loading="lazy">
+          <span>Vista 03</span>
+        </button>
+
+        <button class="gallery-item reveal" data-index="3">
+          <img src="img/Louis Vuitton/Modelo-4.jpg" alt="Louis Vuitton Trainer vista 4" loading="lazy">
+          <span>Vista 04</span>
+        </button>
+
+        <button class="gallery-item reveal" data-index="4">
+          <img src="img/Louis Vuitton/Modelo-5.jpg" alt="Louis Vuitton Trainer vista 5" loading="lazy">
+          <span>Vista 05</span>
+        </button>
+
+        <button class="gallery-item gallery-item-wide reveal" data-index="5">
+          <img src="img/Louis Vuitton/Modelo-6.jpg" alt="Louis Vuitton Trainer vista 6" loading="lazy">
+          <span>Vista 06</span>
+        </button>
+
+        <button class="gallery-item reveal" data-index="6">
+          <img src="img/Louis Vuitton/Modelo-7.jpg" alt="Louis Vuitton Trainer vista 7" loading="lazy">
+          <span>Vista 07</span>
+        </button>
+
+        <button class="gallery-item reveal" data-index="7">
+          <img src="img/Louis Vuitton/Modelo-8.jpg" alt="Louis Vuitton Trainer vista 8" loading="lazy">
+          <span>Vista 08</span>
+        </button>
+
+        <button class="gallery-item gallery-item-large reveal" data-index="8">
+          <img src="img/Louis Vuitton/Modelo-9.jpg" alt="Louis Vuitton Trainer vista 9" loading="lazy">
+          <span>Vista 09</span>
+        </button>
+
+        <button class="gallery-item reveal" data-index="9">
+          <img src="img/Louis Vuitton/Modelo-10.jpg" alt="Louis Vuitton Trainer vista 10" loading="lazy">
+          <span>Vista 10</span>
+        </button>
+
+        <button class="gallery-item reveal" data-index="10">
+          <img src="img/Louis Vuitton/Modelo-11.jpg" alt="Louis Vuitton Trainer vista 11" loading="lazy">
+          <span>Vista 11</span>
+        </button>
+
+        <button class="gallery-item reveal" data-index="11">
+          <img src="img/Louis Vuitton/Modelo-12.jpg" alt="Louis Vuitton Trainer vista 12" loading="lazy">
+          <span>Vista 12</span>
+        </button>
+
+        <button class="gallery-item reveal" data-index="12">
+          <img src="img/Louis Vuitton/Modelo-13.jpg" alt="Louis Vuitton Trainer vista 13" loading="lazy">
+          <span>Vista 13</span>
+        </button>
+
+        <button class="gallery-item gallery-item-wide reveal" data-index="13">
+          <img src="img/Louis Vuitton/Modelo-14.jpg" alt="Louis Vuitton Trainer vista 14" loading="lazy">
+          <span>Vista 14</span>
+        </button>
+
+        <button class="gallery-item reveal" data-index="14">
+          <img src="img/Louis Vuitton/Modelo-15.jpg" alt="Louis Vuitton Trainer vista 15" loading="lazy">
+          <span>Vista 15</span>
+        </button>
+
+        <button class="gallery-item reveal" data-index="15">
+          <img src="img/Louis Vuitton/Modelo-16.jpg" alt="Louis Vuitton Trainer vista 16" loading="lazy">
+          <span>Vista 16</span>
+        </button>
+
+        <button class="gallery-item gallery-item-large reveal" data-index="16">
+          <img src="img/Louis Vuitton/Modelo-17.jpg" alt="Louis Vuitton Trainer vista 17" loading="lazy">
+          <span>Vista 17</span>
+        </button>
+
+        <button class="gallery-item reveal" data-index="17">
+          <img src="img/Louis Vuitton/Modelo-18.jpg" alt="Louis Vuitton Trainer vista 18" loading="lazy">
+          <span>Vista 18</span>
+        </button>
+
+        <button class="gallery-item reveal" data-index="18">
+          <img src="img/Louis Vuitton/Modelo-19.jpg" alt="Louis Vuitton Trainer vista 19" loading="lazy">
+          <span>Vista 19</span>
+        </button>
+
+        <button class="gallery-item reveal" data-index="19">
+          <img src="img/Louis Vuitton/Modelo-20.jpg" alt="Louis Vuitton Trainer vista 20" loading="lazy">
+          <span>Vista 20</span>
+        </button>
+
+        <button class="gallery-item reveal" data-index="20">
+          <img src="img/Louis Vuitton/Modelo-21.jpg" alt="Louis Vuitton Trainer vista 21" loading="lazy">
+          <span>Vista 21</span>
+        </button>
+
+        <button class="gallery-item gallery-item-wide reveal" data-index="21">
+          <img src="img/Louis Vuitton/Modelo-22.jpg" alt="Louis Vuitton Trainer vista 22" loading="lazy">
+          <span>Vista 22</span>
+        </button>
+
+        <button class="gallery-item reveal" data-index="22">
+          <img src="img/Louis Vuitton/Modelo-23.jpg" alt="Louis Vuitton Trainer vista 23" loading="lazy">
+          <span>Vista 23</span>
+        </button>
+
+        <button class="gallery-item reveal" data-index="23">
+          <img src="img/Louis Vuitton/Modelo-24.jpg" alt="Louis Vuitton Trainer vista 24" loading="lazy">
+          <span>Vista 24</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section sizes-section" id="talles">
+      <div class="sizes-image reveal">
+        <img id="sizesImage" src="img/Louis Vuitton/Modelo-19.jpg" alt="Modelo seleccionado de perfil" loading="lazy">
+      </div>
+
+      <div class="sizes-content reveal">
+        <p class="eyebrow">ELEGÍ TU TALLE</p>
+        <h2>Encontrá el<br>ajuste perfecto</h2>
+        <p>Seleccioná tu talle y consultá disponibilidad directamente por WhatsApp.</p>
+
+        <div class="size-selector" id="sizeSelector">
+          <button data-size="39">39</button>
+          <button data-size="40">40</button>
+          <button data-size="41">41</button>
+          <button data-size="42">42</button>
+          <button data-size="43">43</button>
+          <button data-size="44">44</button>
+        </div>
+
+        <p class="selected-size" id="selectedSize">Todavía no seleccionaste un talle.</p>
+      </div>
+    </section>
+
+    <section class="section purchase-section" id="comprar">
+      <div class="purchase-card reveal">
+        <p class="eyebrow">DISPONIBILIDAD LIMITADA</p>
+        <h2 id="purchaseTitle">Louis Vuitton<br>Trainer</h2>
+
+        <div class="price">
+          <span>Precio</span>
+          <strong>Consultar</strong>
+        </div>
+
+        <p class="purchase-description">
+          Consultanos por precio, talles disponibles, métodos de pago y opciones de envío.
+        </p>
+
+        <a
+          href="#"
+          class="button button-whatsapp"
+          id="whatsappButton"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Consultar por WhatsApp
+        </a>
+
+        <small>Respuesta rápida · Atención personalizada</small>
+      </div>
+
+      <div class="purchase-image reveal">
+        <img id="purchaseImage" src="img/Louis Vuitton/Modelo-24.jpg" alt="Presentación del modelo seleccionado" loading="lazy">
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#inicio" class="brand footer-brand">
+      <span class="brand-mark">LS</span>
+      <span>
+        <strong>LUXE</strong>
+        <small>SNEAKERS</small>
+      </span>
+    </a>
+
+    <p>Catálogo exclusivo de zapatillas premium.</p>
+
+    <div class="footer-links">
+      <a href="#catalogo">Modelos</a>
+      <a href="#producto">Producto</a>
+      <a href="#galeria">Galería</a>
+      <a href="#talles">Talles</a>
+      <a href="#comprar">Contacto</a>
+    </div>
+
+    <p class="copyright">© <span id="currentYear"></span> Luxe Sneakers. Todos los derechos reservados.</p>
+    <section id="clientes" class="clientes">
+    <div class="container">
+
+        <span class="section-tag">Clientes felices</span>
+
+        <h2>Más de 500 clientes ya confiaron en nosotros</h2>
+
+        <p class="clientes-texto">
+            Calidad premium, envíos a todo el país y una atención que hace que nuestros clientes siempre vuelvan.
+        </p>
+
+        <div class="estadisticas">
+
+            <div class="stat">
+                <h3>4.9 ★</h3>
+                <p>Calificación promedio</p>
+            </div>
+
+            <div class="stat">
+                <h3>500+</h3>
+                <p>Clientes satisfechos</p>
+            </div>
+
+            <div class="stat">
+                <h3>100%</h3>
+                <p>Compra segura</p>
+            </div>
+
+        </div>
+
+        <div class="clientes-grid">
+
+            <!-- ACA VAN LAS FOTOS -->
+
+        </div>
+
+        </div>
+    </section>
+
+
+    <section class="clientes" id="clientes">
+
+    <div class="container">
+
+        <span class="section-tag">
+            ⭐ Clientes felices
+        </span>
+
+        <h2>Más de 500 clientes ya confiaron en nosotros</h2>
+
+        <p class="clientes-texto">
+            Cada compra es una nueva historia. Estas son algunas de las personas que ya eligieron
+            <strong>The World is Shoes</strong>.
+        </p>
+
+        <div class="clientes-estadisticas">
+
+            <div class="dato">
+                <h3>4.9 ★</h3>
+                <span>Calificación promedio</span>
+            </div>
+
+            <div class="dato">
+                <h3>500+</h3>
+                <span>Clientes felices</span>
+            </div>
+
+            <div class="dato">
+                <h3>100%</h3>
+                <span>Compra segura</span>
+            </div>
+
+        </div>
+
+        <div class="clientes-grid">
+
+            <div class="cliente-card">
+                <img src="img/Clientes/Cliente-1.jpg">
+                <div class="review">⭐⭐⭐⭐⭐<p>"Excelente calidad, volvería a comprar."</p></div>
+            </div>
+
+            <div class="cliente-card">
+                <img src="img/Clientes/Cliente-2.jpg">
+                <div class="review">⭐⭐⭐⭐⭐<p>"Muy buena atención y envío rápido."</p></div>
+            </div>
+
+            <div class="cliente-card">
+                <img src="img/Clientes/Cliente-3.jpg">
+                <div class="review">⭐⭐⭐⭐⭐<p>"Las zapatillas son increíbles."</p></div>
+            </div>
+
+            <div class="cliente-card">
+                <img src="img/Clientes/Cliente-4.jpg">
+                <div class="review">⭐⭐⭐⭐⭐<p>"Todo llegó perfecto."</p></div>
+            </div>
+
+            <div class="cliente-card">
+                <img src="img/Clientes/Cliente-5.jpg">
+                <div class="review">⭐⭐⭐⭐⭐<p>"Muy recomendable."</p></div>
+            </div>
+
+            <div class="cliente-card">
+                <img src="img/Clientes/Cliente-6.jpg">
+                <div class="review">⭐⭐⭐⭐⭐<p>"Excelente experiencia."</p></div>
+            </div>
+
+            <div class="cliente-card">
+                <img src="img/Clientes/Cliente-7.jpg">
+                <div class="review">⭐⭐⭐⭐⭐<p>"Superó mis expectativas."</p></div>
+            </div>
+
+            <div class="cliente-card">
+                <img src="img/Clientes/Cliente-8.jpg">
+                <div class="review">⭐⭐⭐⭐⭐<p>"Muy buena calidad."</p></div>
+            </div>
+
+            <div class="cliente-card">
+                <img src="img/Clientes/Cliente-9.jpg">
+                <div class="review">⭐⭐⭐⭐⭐<p>"Muy conforme con la compra."</p></div>
+            </div>
+
+            <div class="cliente-card">
+                <img src="img/Clientes/Cliente-10.jpg">
+                <div class="review">⭐⭐⭐⭐⭐<p>"Volvería a comprar."</p></div>
+            </div>
+
+            <div class="cliente-card">
+                <img src="img/Clientes/Cliente-11.jpg">
+                <div class="review">⭐⭐⭐⭐⭐<p>"Excelente servicio."</p></div>
+            </div>
+
+        </div>
+
+      </div>
+
+    </section>
+  </footer>
+
+  <a href="#inicio" class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</a>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar imagen">×</button>
+    <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Imagen anterior">‹</button>
+
+    <div class="lightbox-content">
+      <img id="lightboxImage" src="" alt="Vista ampliada de Louis Vuitton Trainer">
+      <p id="lightboxCaption"></p>
+    </div>
+
+    <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Imagen siguiente">›</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
