@@ -1354,3 +1354,101 @@ CLIENTES
     font-size:15px;
     line-height:1.6;
 }
+
+/* =========================
+   PROMO
+========================= */
+
+.promo-section{
+    background:#0d0d0d;
+    padding:100px 7%;
+    border-top:1px solid rgba(255,255,255,.06);
+    border-bottom:1px solid rgba(255,255,255,.06);
+}
+
+.promo-container{
+    max-width:1400px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:.75fr 1.25fr;
+    align-items:center;
+    gap:70px;
+}
+
+.promo-text{
+    color:#fff;
+}
+
+.promo-text .eyebrow{
+    color:#caa45d;
+    font-size:12px;
+    letter-spacing:4px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.promo-text h2{
+    font-family:"Cormorant Garamond", serif;
+    font-size:clamp(45px,5vw,76px);
+    line-height:.95;
+    margin-bottom:28px;
+}
+
+.promo-text h2 span{
+    color:#caa45d;
+    font-style:italic;
+}
+
+.promo-text > p:not(.eyebrow){
+    color:#aaa;
+    font-size:16px;
+    line-height:1.8;
+    max-width:500px;
+    margin-bottom:35px;
+}
+
+.promo-image{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.promo-image img{
+    width:100%;
+    max-width:720px;
+    height:auto;
+    display:block;
+    border-radius:22px;
+    box-shadow:0 30px 80px rgba(0,0,0,.55);
+    transition:transform .4s ease;
+}
+
+.promo-image img:hover{
+    transform:scale(1.02);
+}
+
+@media(max-width:900px){
+
+    .promo-section{
+        padding:70px 5%;
+    }
+
+    .promo-container{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .promo-text{
+        text-align:center;
+    }
+
+    .promo-text > p:not(.eyebrow){
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .promo-image img{
+        max-width:520px;
+    }
+
+}
